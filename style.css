@@ -10,10 +10,82 @@
 @font-face {
     font-family: Vegur-light;
     src: url('/fonts/Vegur/Vegur-Light.otf');
+    font-family: Ostrich-Sans-light;
+    src: url('/fonts/Ostrich/ostrich-sans-light.ttf');
 }
 
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-color : var(--cream);
     font-family: Vegur-light;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column__title{
+    font-size: 30px;
+    /*font-family: Ostrich-Sans-light;*/
+}
+
+ul{
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 2% 0 1% 0;
+    padding:0;
+    width: 15%;
+}
+
+li{
+    line-height: 150%;
+}
+
+#column__img_logo{
+    width: 100%;
+    margin-top: 10%;
+}
+
+#column__addmail{
+    padding: 5px;
+    border: 1px solid var(--white);
+    border-radius: 7px;
+}
+
+#column__validmail{
+    padding: 5px 8px;
+    margin-left: 12px;
+    border: 1px solid var(--white);
+    border-radius: 7px;
+    background-color: #8D7867;
+    font-size: 10px;
+    text-align: center;
+}
+
+#column__socialmedia{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2%;
 }

@@ -21,6 +21,8 @@
 body{
     background-color : var(--cream);
     font-family: Vegur-light;
+    padding: 0;
+    margin: 0;
 }
 
 img{
@@ -28,6 +30,37 @@ img{
     height: auto;
 }
 
+/* ---------- BEST SELLER ----------- */
+
+.bestseller__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bestseller__content ul {
+    margin-bottom: 3%;
+}
+
+.bestseller__content--info{
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    margin: -12px 6px 0 6px;
+    padding: 0;
+    text-align: center;
+}
+.bestseller__content--info p{
+    padding: 3px 0;
+    margin: 0;
+}
+
+.bestseller__content--info p img{
+    width: 15px;
+}
+
+.bestseller__content--info p img, span{
+    margin: 0 10%;
+}
 /* ---------- FOOTER ---------- */
 
 .footer{

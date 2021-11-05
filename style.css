@@ -1,19 +1,93 @@
 :root {
-    --cream: #F2F1EA;
-    --brown: #A58F7C;
-    --black: #000000;
-    --white: #fff;
-    --orange : #FFAE00;
-    --red: #A2404A;
+  --cream: #F2F1EA;
+  --brown: #A58F7C;
+  --black: #000000;
+  --white: #fff;
+  --orange : #FFAE00;
+  --red: #A2404A;
 }
 
 @font-face {
-    font-family: Vegur-light;
-    src: url('/fonts/Vegur/Vegur-Light.otf');
+  font-family: Vegur-light;
+  src: url('/fonts/Vegur/Vegur-Light.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color : var(--cream);
+  font-family: Vegur-light;
+}
+
+img{
+  /* petit truc pour permettre a une image de ne pas deborder du parent */
+  max-width: 100%;
+  height: auto; 
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ---Navbar--- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+}
+
+.header__nav {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+
+  }
+
+.header__logo {
+  background-position: bottom;
 }
 
 
-body{
-    background-color : var(--cream);
-    font-family: Vegur-light;
+.card__btn{
+  margin-top: auto;
+}
+/* ---End-Navbar--- */
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 }

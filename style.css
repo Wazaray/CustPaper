@@ -20,14 +20,16 @@
 }
 
 body{
-  background-color : var(--cream);
-  font-family: Vegur-light;
+    background-color : var(--cream);
+    font-family: Vegur-light;
+    padding: 0;
+    margin: 0;
 }
 
 img{
   /* petit truc pour permettre a une image de ne pas deborder du parent */
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 .container {
@@ -89,10 +91,41 @@ img{
 .col-12 {width: 100%;}
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/* ---------- BEST SELLER ----------- */
+
+.bestseller__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bestseller__content ul {
+    margin-bottom: 3%;
+}
+
+.bestseller__content--info{
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    margin: -12px 6px 0 6px;
+    padding: 0;
+    text-align: center;
+}
+.bestseller__content--info p{
+    padding: 3px 0;
+    margin: 0;
+}
+
+.bestseller__content--info p img{
+    width: 15px;
+}
+
+.bestseller__content--info p img, span{
+    margin: 0 10%;
 }
 /* ---------- FOOTER ---------- */
 

@@ -26,12 +26,27 @@ body{
     margin: 0;
 }
 
+h2, .from{
+    margin-left: 5%;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.from{
+    font-size: 20px;
+}
 img{
   /* petit truc pour permettre a une image de ne pas deborder du parent */
   max-width: 100%;
   height: auto;
 }
 
+ul {
+    list-style-type: none;
+}
 .container {
   max-width: 1000px;
   margin-left: auto;
@@ -97,14 +112,27 @@ img{
     }
 }
 /* ---------- BEST SELLER ----------- */
+.bestseller{
+    background-color: var(--white);
+    padding: 30px 0;
+}
 
-.bestseller__content{
+.bestseller__carousel-items {
     display: flex;
-    justify-content: space-around;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.bestseller__carousel-item {
+    flex: 1 0 250px;
+    margin-left: 2rem;
+    scroll-snap-align: start;
 }
 
 .bestseller__content ul {
-    margin-bottom: 3%;
+    margin: 0 0 1.5rem;
+    padding: 0;
 }
 
 .bestseller__content--info{
@@ -115,18 +143,43 @@ img{
     padding: 0;
     text-align: center;
 }
+
+
 .bestseller__content--info p{
     padding: 3px 0;
     margin: 0;
 }
 
-.bestseller__content--info p img{
-    width: 15px;
+.best_seller--img{
+    height: auto;
+    margin-bottom: .5rem;
+    max-width: calc(100% + 2rem);
+    position: relative;
+    left: -1rem;
+    right: -1rem;
 }
 
 .bestseller__content--info p img, span{
     margin: 0 10%;
 }
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    margin: 0 50px;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--brown);
+    border-radius: 3px;
+}
+
+
+
 /* ---------- FOOTER ---------- */
 
 .footer{
@@ -144,15 +197,14 @@ img{
     /*font-family: Ostrich-Sans-light;*/
 }
 
-ul{
-    list-style-type: none;
+.footer__column ul{
     list-style-position: outside;
     margin: 2% 0 1% 0;
     padding:0;
-    width: 15%;
+    /* width: 15%; */
 }
 
-li{
+.footer__row li{
     line-height: 150%;
 }
 

@@ -74,6 +74,58 @@ img{
 }
 /* ---End-Navbar--- */
 
+/* ---Start-Banner--- */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-image: url('img/banner_homepage.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 340px;
+
+}
+
+.banner__title {
+  text-align: center;
+  font-size: 50%;
+  color: var(--white);
+  position: relative;
+  top:40%;
+  }
+
+.halloween__button {
+  background: #894826;
+  border-radius: 20px;
+  padding: 10px;
+  height:40px;
+  width: 100px;
+  position: relative;
+  left:40%;
+  top:45%;
+}
+
+.button__title {
+  text-align: center;
+  color: var(--white);
+}
+
+@media screen and (min-width : 800px) {
+  .cards__item{
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width : 600px) {
+  .cards__item{
+    max-width: 100%;
+  }
+}
+
+/* ---End-Banner--- */
+
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
